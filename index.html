@@ -7,29 +7,29 @@
       body {
         margin: 0;
         background: black;
-        color: white;
         height: 100vh;
         display: flex;
-        align-items: center;
         justify-content: center;
+        align-items: center;
         font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+        color: white;
       }
-      button {
-        padding: 1rem 2rem;
-        font-size: 1.1rem;
-        border-radius: 999px;
-        border: none;
-        cursor: pointer;
+      .container {
+        width: 90%;
+        max-width: 600px;
+        text-align: center;
+      }
+      audio {
+        width: 100%;
       }
     </style>
   </head>
   <body>
-    <button onclick="document.getElementById('audio').play(); this.style.display='none';">
-      ▶️ Lancer le son
-    </button>
-
-    <audio id="audio">
-      <source src="creationsonore1.mp3" type="audio/mpeg" />
-    </audio>
+    <div class="container">
+      <audio controls>
+        <source src="creationsonore1.mp3" type="audio/mpeg" />
+        Votre navigateur ne supporte pas l'élément audio.
+      </audio>
+    </div>
   </body>
 </html>

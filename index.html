@@ -8,6 +8,15 @@
       * {
         box-sizing: border-box;
       }
+
+      /* Déclaration de la webfont DejaVu Serif Book */
+      @font-face {
+        font-family: "DejaVuSerifWeb";
+        src: url("DejaVuSerif.ttf") format("truetype");
+        font-weight: normal;
+        font-style: normal;
+      }
+
       body {
         margin: 0;
         background: #ff0000; /* Fond rouge */
@@ -19,12 +28,22 @@
         align-items: flex-start;
         padding: 3rem 1rem;
       }
+
       .container {
         width: 100%;
         max-width: 600px;
+        text-align: center;
       }
+
       audio {
         width: 100%;
+      }
+
+      .titre {
+        margin-top: 1rem;
+        font-size: 1.4rem;
+        color: black;
+        font-family: "DejaVuSerifWeb", serif; /* Utilise la webfont */
       }
     </style>
   </head>
@@ -34,6 +53,8 @@
         <source src="creationsonore1.mp3" type="audio/mpeg" />
         Votre navigateur ne supporte pas l'élément audio.
       </audio>
+
+      <div class="titre">Création sonore numéro 1</div>
     </div>
   </body>
 </html>

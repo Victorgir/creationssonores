@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Création sonore n°3</title>
+
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      /* Webfont DejaVu Serif */
+      @font-face {
+        font-family: "DejaVuSerifWeb";
+        src: url("DejaVuSerif.ttf") format("truetype");
+        font-weight: normal;
+        font-style: normal;
+      }
+
+      body {
+        margin: 0;
+        background: #ff0000; /* fond rouge */
+        min-height: 100vh;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        padding: 3rem 1rem;
+      }
+
+      .container {
+        width: 100%;
+        max-width: 600px;
+        text-align: center;
+      }
+
+      audio {
+        width: 100%;
+      }
+
+      .titre {
+        margin-top: 1rem;
+        font-size: 1.4rem;
+        color: black;
+        font-family: "DejaVuSerifWeb", serif;
+      }
+
+      .retour {
+        margin-top: 2rem;
+        display: inline-block;
+        padding: 0.5rem 1.2rem;
+        border-radius: 999px;
+        background: black;
+        color: white;
+        text-decoration: none;
+        font-size: 0.9rem;
+        font-family: "DejaVuSerifWeb", serif;
+      }
+
+      .retour:active {
+        transform: scale(0.97);
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <audio controls>
+        <source src="creationsonore3.mp3" type="audio/mpeg" />
+        Votre navigateur ne supporte pas l'élément audio.
+      </audio>
+
+      <div class="titre">Création sonore numéro 3</div>
+
+      <a class="retour" href="index.html">← Retour aux créations</a>
+    </div>
+  </body>
+</html>
